@@ -1,0 +1,5 @@
+minio:
+  host: http://localhost:9000
+  access-key: minio_access_key
+  secret-key: minio_secret_key
+  partSize: 10000000 # bytes (min 5MiB)
