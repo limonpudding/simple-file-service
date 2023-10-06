@@ -14,5 +14,19 @@ services:
     restart: always
     volumes:
       - ./storage:/data
-#  service:
-#    build: .
+  file-service-java:
+    build:
+      context: ./
+      dockerfile: ./java/Dockerfile
+    container_name: file-service-java
+    ports:
+      - "8080:8080"
+    restart: always
+  file-service-kotlin:
+    build:
+      context: ./
+      dockerfile: ./kotlin/Dockerfile
+    container_name: file-service-kotlin
+    ports:
+      - "7070:8080"
+    restart: always

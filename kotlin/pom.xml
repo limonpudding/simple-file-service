@@ -8,10 +8,11 @@
         <groupId>com.example</groupId>
         <artifactId>file-service</artifactId>
         <version>0.0.1</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>file-service-kotlin</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>file-service-kotlin</name>
     <description>Simple file service (Kotlin realisation)</description>
     <properties>
